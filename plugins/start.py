@@ -129,13 +129,14 @@ async def start_command(client: Client, message: Message):
     else:
         reply_markup = InlineKeyboardMarkup(
             [
-                    [InlineKeyboardButton("• ᴍᴏʀᴇ ᴄʜᴀɴɴᴇʟs •", url="https://t.me/Nova_Flix/50")],
-
-    [
-                    InlineKeyboardButton("• ᴀʙᴏᴜᴛ", callback_data = "about"),
-                    InlineKeyboardButton('ʜᴇʟᴘ •', callback_data = "help")
-
-    ]
+                    [
+                    InlineKeyboardButton('🍁 K Dʀᴀᴍᴀ', url='https://t.me/+dAatIkcrgHs0OWY1'),
+                    InlineKeyboardButton('⚡ Aɴɪᴍᴇ ', url='https://telegram.me/sitaratoons')
+                ],
+                [
+                    InlineKeyboardButton('🤩 Aɴɪᴍᴇ Mᴏᴠɪᴇ', url='https://telegram.me/+Zutr-hfuNeFhNWM9'),
+                    InlineKeyboardButton('🌐 Oᴜʀ Bᴀꜱᴇ', url='https://t.me/New_Anime_Hindi_dub_ST')
+                ]
             ]
         )
         await message.reply_photo(
