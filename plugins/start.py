@@ -1,3 +1,15 @@
+# Don't Remove Credit @CodeFlix_Bots, @rohit_1888
+# Ask Doubt on telegram @CodeflixSupport
+#
+# Copyright (C) 2025 by Codeflix-Bots@Github, < https://github.com/Codeflix-Bots >.
+#
+# This file is part of < https://github.com/Codeflix-Bots/FileStore > project,
+# and is released under the MIT License.
+# Please see < https://github.com/Codeflix-Bots/FileStore/blob/master/LICENSE >
+#
+# All rights reserved.
+#
+
 import asyncio
 import os
 import random
@@ -82,7 +94,7 @@ async def start_command(client: Client, message: Message):
             return
         finally:
             await temp_msg.delete()
- 
+
         codeflix_msgs = []
         for msg in messages:
             caption = (CUSTOM_CAPTION.format(previouscaption="" if not msg.caption else msg.caption.html, 
@@ -115,13 +127,16 @@ async def start_command(client: Client, message: Message):
                 schedule_auto_delete(client, codeflix_msgs, notification_msg, FILE_AUTO_DELETE, reload_url)
             )
     else:
-                reply_markup = InlineKeyboardMarkup(
+        reply_markup = InlineKeyboardMarkup(
             [
-                    [InlineKeyboardButton('Aɴɪᴍᴇs', url='https://t.me/Hindi_Dub_Anime_Zone'),
-                InlineKeyboardButton('Bᴀsᴇ', url='https://t.me/AniReal_Anime_Zone')],
-                [InlineKeyboardButton('• ᴀʙᴏᴜᴛ', url='https://telegra.ph/AniReal---Support-Bot-08-07'),
-                InlineKeyboardButton(' ʜᴇʟᴘ •', url='https://telegra.ph/AniReal---Support-Bot-08-07-3')],
-                [InlineKeyboardButton("Jᴏɪɴ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ", url='https://t.me/AniReal_Updates')]
+                    [
+                    InlineKeyboardButton('🍁 K Dʀᴀᴍᴀ', url='https://t.me/+dAatIkcrgHs0OWY1'),
+                    InlineKeyboardButton('⚡ Aɴɪᴍᴇ ', url='https://telegram.me/sitaratoons')
+                ],
+                [
+                    InlineKeyboardButton('🤩 Aɴɪᴍᴇ Mᴏᴠɪᴇ', url='https://telegram.me/+Zutr-hfuNeFhNWM9'),
+                    InlineKeyboardButton('🌐 Oᴜʀ Bᴀꜱᴇ', url='https://t.me/AniReal_Anime_Zone')
+                ]
             ]
         )
         await message.reply_photo(
@@ -135,7 +150,7 @@ async def start_command(client: Client, message: Message):
             ),
             reply_markup=reply_markup,
             message_effect_id=5104841245755180586)  # 🔥
-        
+
         return
 
 
