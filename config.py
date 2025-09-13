@@ -27,7 +27,7 @@ CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002516423394")) #Your db channe
 OWNER = os.environ.get("OWNER", "sitaratoons_support") # Owner username without @
 OWNER_ID = int(os.environ.get("OWNER_ID", "6692613520")) # Owner id
 #--------------------------------------------
-PORT = os.environ.get("PORT", "8080")
+PORT = os.environ.get("PORT", "22")
 #--------------------------------------------
 DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://stoons:stoons@ajay.v5uug.mongodb.net/?retryWrites=true&w=majority")
 DB_NAME = os.environ.get("DATABASE_NAME", "Ajay")
