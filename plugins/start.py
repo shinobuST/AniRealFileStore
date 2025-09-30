@@ -94,7 +94,7 @@ async def start_command(client: Client, message: Message):
             return
         finally:
             await temp_msg.delete()
-
+ 
         codeflix_msgs = []
         for msg in messages:
             caption = (CUSTOM_CAPTION.format(previouscaption="" if not msg.caption else msg.caption.html, 
@@ -135,7 +135,7 @@ async def start_command(client: Client, message: Message):
                 ],
                 [
                     InlineKeyboardButton('🤩 Aɴɪᴍᴇ Mᴏᴠɪᴇ', url='https://telegram.me/+Zutr-hfuNeFhNWM9'),
-                    InlineKeyboardButton('🌐 Oᴜʀ Bᴀꜱᴇ', url='https://t.me/AniReal_Anime_Zone')
+                    InlineKeyboardButton('🌐 Oᴜʀ Bᴀꜱᴇ', url='https://t.me/New_Anime_Hindi_dub_ST')
                 ]
             ]
         )
@@ -150,7 +150,7 @@ async def start_command(client: Client, message: Message):
             ),
             reply_markup=reply_markup,
             message_effect_id=5104841245755180586)  # 🔥
-
+        
         return
 
 
