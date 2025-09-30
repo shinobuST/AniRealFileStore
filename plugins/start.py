@@ -127,31 +127,30 @@ async def start_command(client: Client, message: Message):
                 schedule_auto_delete(client, codeflix_msgs, notification_msg, FILE_AUTO_DELETE, reload_url)
             )
     else:
-        reply_markup = InlineKeyboardMarkup(
+    reply_markup = InlineKeyboardMarkup(
+        [
             [
-                    [
-                    InlineKeyboardButton('🍁 K Dʀᴀᴍᴀ', url='https://t.me/+dAatIkcrgHs0OWY1'),
-                    InlineKeyboardButton('⚡ Aɴɪᴍᴇ ', url='https://telegram.me/sitaratoons')
-                ],
-                [
-                    InlineKeyboardButton('🤩 Aɴɪᴍᴇ Mᴏᴠɪᴇ', url='https://telegram.me/+Zutr-hfuNeFhNWM9'),
-                    InlineKeyboardButton('🌐 Oᴜʀ Bᴀꜱᴇ', url='https://t.me/New_Anime_Hindi_dub_ST')
-                ]
+                InlineKeyboardButton('🍁 K Dʀᴀᴍᴀ', url='https://t.me/+dAatIkcrgHs0OWY1'),
+                InlineKeyboardButton('⚡ Aɴɪᴍᴇ ', url='https://telegram.me/sitaratoons')
+            ],
+            [
+                InlineKeyboardButton('🤩 Aɴɪᴍᴇ Mᴏᴠɪᴇ', url='https://telegram.me/+Zutr-hfuNeFhNWM9'),
+                InlineKeyboardButton('🌐 Oᴜʀ Bᴀꜱᴇ', url='https://t.me/AniReal_Anime_Zone')
             ]
-        )
-        await message.reply_photo(
-            photo=START_PIC,
-            caption=START_MSG.format(
-                first=message.from_user.first_name,
-                last=message.from_user.last_name,
-                username=None if not message.from_user.username else '@' + message.from_user.username,
-                mention=message.from_user.mention,
-                id=message.from_user.id
-            ),
-            reply_markup=reply_markup,
-            message_effect_id=5104841245755180586)  # 🔥
-        
-        return
+        ]
+    )
+    await message.reply_photo(
+        photo=START_PIC,
+        caption=START_MSG.format(
+            first=message.from_user.first_name,
+            last=message.from_user.last_name,
+            username=None if not message.from_user.username else '@' + message.from_user.username,
+            mention=message.from_user.mention,
+            id=message.from_user.id
+        ),
+        reply_markup=reply_markup
+    )
+    return
 
 
 
